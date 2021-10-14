@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  background-color: #f4f7ff;
+}
+
+.clear {
+  clear: both;
+}
+h1 {
+  font-weight: 700;
+  color: $color-yellow;
+  font-size: 4rem;
+}
+h2 {
+  font-weight: 600;
+  color: $color-yellow;
+  font-size: 3rem;
+}
+.text-primary {
+  color: $color-yellow !important;
+}

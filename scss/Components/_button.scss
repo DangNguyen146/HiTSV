@@ -1,0 +1,6 @@
+.PrimaryButton{
+    @include buttonPrimary();
+}
+.buttonOutilinePrimary{
+    @include buttonOutilinePrimary();
+}

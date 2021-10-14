@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="js/coutdown.js"></script>
+    <script src="js/wow.min.js"></script>
+    <title>HiTSV! | Đoàn khoa Mạng máy tính và Truyền thông</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow animate__animated animate__fadeInDown">
+        <div class="container">
+            <button class="navbar-toggler boder mt-2 text-white border" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarPage" aria-controls="navbarPage" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                <img src="./img/LogoHiTSV!.png" height="40" alt="" loading="lazy" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarPage">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-none d-sm-block" href="#timeline">TIMELINE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">LIÊN HỆ</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="https://suctremmt.com/hitsv2021" class="PrimaryButton">
+                        <div class="">
+                            <span class="span-hover"></span>
+                            <span class="span-non">THAM GIA NGAY</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-none d-md-block col-md-1"></div>
+                <div class="col-12 col-md-5 ps-0 menuLeft overflow-hidden">
+                    <div class="animate__animated animate__fadeInLeft">
+                        <h1>Hi TSV!</h1>
+                        <p class="text-bold">Chào mừng tất cả tân sinh viên trên địa bàn TP HCM<br />
+                            Cùng Khoa Mạng Máy Tính và Truyền Thông - UIT tham gia ngay cuộc thi!!!</p>
+                        <a href="https://suctremmt.com/hitsv2021" class="buttonOutilinePrimary">
+                            <div class="">
+                                <span class="span-hover"></span>
+                                <span class="span-non">THAM GIA NGAY</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" animate__animated animate__slideInLeft" style="margin-top: 5rem;">
+                        <img src="./img/Asset 2.png" class="w-75" alt="">
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-12 col-md-6 pe-0 overflow-hidden menuRight">
+                    <div class="hinhVeHeader w-100" style="right: 0;">
+                        <img src="./img/Asset 16.png" class="truong w-100 animate__animated animate__fadeInRight"
+                            alt="Trường Đại học Công Nghệ Thông Tin">
+                        <img src="./img/ToaNha.png" class="truong w-100 animate__animated animate__fadeInRight"
+                            alt="Trường Đại học Công Nghệ Thông Tin">
+                        <img src="./img/MayVuong.png" class="w-100 animate__animated animate__fadeIn "
+                            alt="Trường Đại học Công Nghệ Thông Tin">
+                        <img src="./img/Chim.png" class="w-100 animate__animated animate__fadeInLeft " alt="">
+                        <img src="./img/May.png" class="w-100 animate__animated animate__fadeInDown" alt="">
+                        <img src="./img/MatTroi.png" class="w-100 animate__animated animate__fadeInLeft" alt="">
+                        <img src="./img/Cay1.png" class="cay w-100 animate__animated animate__zoomIn"
+                            style="top:3rem; right: 0;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="coutdown wow animate__fadeInUp">
+        <div class="container">
+            <h2><b>COMMING SOON</b></h2>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-10 col-md-8 justify-content-center col-md-9 tableClock shadow rounded-3">
+                    <div class="container">
+                        <div class="row text-center py-3">
+                            <div class="col text-light my-auto">
+                                <b class="" style="font-size: 2.5rem;" id="day">00</b>
+                                <p>DAYS</p>
+                            </div>
+                            <div class="col-1 font-weight-bolder text-light my-auto" style="font-size: 2rem">:</div>
+                            <div class="col text-light my-auto">
+                                <b class="" style="font-size: 2.5rem; " id="hour">00</b>
+                                <p>HOURS</p>
+                            </div>
+                            <div class="col-1 font-weight-bolder text-light my-auto" style="font-size: 2rem">:</div>
+                            <div class="col  text-light my-auto">
+                                <b class="" style="font-size: 2.5rem; " id="minu">00</b>
+                                <p>MINUTES</p>
+                            </div>
+                            <div class="d-none d-md-block col-1 font-weight-bolder text-light my-auto"
+                                style="font-size: 2rem">:</div>
+                            <div class="d-none d-md-block col  text-light my-auto">
+                                <b class="" style="font-size: 2.5rem; " id="seco">00</b>
+                                <p>SECONDS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="challenges">
+        <div class="challenges-top">
+            <div class="challenges-top text-light bold wow animate__fadeInUp">
+                <div class="container">
+                    <div class="row">
+                        <div class="d-none d-sm-block col img-left">
+                            <img src="./img/Chipi1_1.png" alt="">
+                        </div>
+                        <div class="col-12 col-sm-10  col-lg-8">
+                            <div class="w-100 mt-0" style=" border-top: 2px solid white;"></div>
+                            <p class="mb-1 border-light">Bạn đã chuẩn bị sẳn sàng cho</p>
+                            <h2><b>NHỮNG THỬ THÁCH</b></h2>
+                        </div>
+                        <div class="d-none d-sm-block col img-right">
+                            <img src="./img/Chipi2.png" alt="">
+                        </div>
+                        <div class="d-block d-sm-none col-12 text-center">
+                            <img src="./img/chipidouble.png" class="w-50" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="challenges-botton">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3 challeneds-item wow animate__fadeInUp">
+                        <div class="iimgchallengs-hover text-light ">
+                            <h3 class="text-center fw-bold" style="font-size: 2rem; margin-top: 45%;">Cầm</h3>
+                        </div>
+                        <div class="img-challenges shadow">
+                            <img src="./img/cam.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 challeneds-item wow animate__fadeInUp">
+                        <div class="iimgchallengs-hover text-light ">
+                            <h3 class="text-center fw-bold" style="font-size: 2rem; margin-top: 45%;">Kỳ</h3>
+                        </div>
+                        <div class="img-challenges shadow ">
+                            <img src="./img/ky.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="d-block d-md-none col-12 my-2"></div>
+                    <div class="col-6 col-md-3 challeneds-item wow animate__fadeInUp">
+                        <div class="iimgchallengs-hover text-light ">
+                            <h3 class="text-center fw-bold" style="font-size: 2rem; margin-top: 45%;">Thi</h3>
+                        </div>
+                        <div class="img-challenges shadow">
+                            <img src="./img/thi.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 challeneds-item wow animate__fadeInUp">
+                        <div class="iimgchallengs-hover text-light ">
+                            <h3 class="text-center fw-bold" style="font-size: 2rem; margin-top: 45%;"> Họa</h3>
+                        </div>
+                        <div class="img-challenges shadow">
+                            <img src="./img/hoa.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="timeline" class="d-none d-sm-block  wow animate__fadeInUp">
+        <div class="container ">
+            <div class="row">
+                <h2 class=" text-center">TIMELINE</h2>
+                <div class="mt-5">
+                    <div class="timeline">
+                        <div class="timeline-wrapper timeline-wrapper-warning">
+                            <div class="timeline-badge"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h5 class="timeline-title">MINIGAME “WH47’S MY P4$$W0RD?</h5>
+                                </div>
+                                <div class="timeline-body text-center">
+                                    <img src="./img/244749838_4687770767942517_5322775904601794471_n.jpg" height="150px"
+                                        class="" alt="">
+                                </div>
+                                <div class="timeline-footer d-flex align-items-center flex-wrap">
+                                    <i class="mdi mdi-heart-outline text-muted me-1"></i>
+                                    <span class="ms-md-auto font-weight-bold">9/10/2021</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-wrapper timeline-inverted timeline-wrapper-danger">
+                            <div class="timeline-badge">
+                            </div>
+                            <div class="timeline-panel">
+                                <h5 class="timeline-title">Mở link đăng kí chương trình</h5>
+                                <div class="timeline-heading text-center">
+                                    <img src="./img/243138489_4700685063317754_4836413167949705054_n.png" height="150px"
+                                        class="" alt="">
+                                </div>
+                                <div class="timeline-body">
+                                </div>
+                                <div class="timeline-footer d-flex align-items-center flex-wrap">
+                                    <i class="mdi mdi-heart-outline text-muted me-1"></i>
+                                    <span class="ms-md-auto font-weight-bold">20 - 22/10/2021</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="timeline-wrapper timeline-wrapper-success">
+                            <div class="timeline-badge"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h6 class="timeline-title">Bootstrap 4 Alpha 5</h6>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Alpha 5 has arrived just over a month after Alpha 4 with some major
+                                        feature improvements and a boat load of bug fixes.</p>
+                                </div>
+                                <div class="timeline-footer d-flex align-items-center flex-wrap">
+                                    <i class="mdi mdi-heart-outline text-muted me-1"></i>
+                                    <span>19</span>
+                                    <span class="ms-md-auto font-weight-bold">5th Sep 2016</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-wrapper timeline-inverted timeline-wrapper-info">
+                            <div class="timeline-badge"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h6 class="timeline-title">Bootstrap 4 Alpha 4</h6>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Alpha 4 is here to address those pesky build and package errors, a
+                                        few CSS bugs, and some documentation inconsistencies we introduced
+                                        in our last release.</p>
+                                </div>
+                                <div class="timeline-footer d-flex align-items-center flex-wrap">
+                                    <i class="mdi mdi-heart-outline text-muted me-1"></i>
+                                    <span>19</span>
+                                    <span class="ms-md-auto font-weight-bold">27th July 2016</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-wrapper timeline-wrapper-primary">
+                            <div class="timeline-badge"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h6 class="timeline-title">Bootstrap 4 Alpha 3</h6>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Alpha 3 has landed! We have an overhauled grid, updated form
+                                        controls, a new font stack, tons of bug fixes, and more.</p>
+                                </div>
+                                <div class="timeline-footer d-flex align-items-center flex-wrap">
+                                    <i class="mdi mdi-heart-outline text-muted me-1"></i>
+                                    <span>25</span>
+                                    <span class="ms-md-auto font-weight-bold">25th July 2016</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-wrapper timeline-inverted timeline-wrapper-info">
+                            <div class="timeline-badge"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h6 class="timeline-title">Bootstrap 4 Alpha 2</h6>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>The general plan for v4’s development starts with a few alpha
+                                        releases. We’re a little behind on that, but should be getting
+                                        caught up as the year winds down.</p>
+                                </div>
+                                <div class="timeline-footer d-flex align-items-center flex-wrap">
+                                    <i class="mdi mdi-heart-outline text-muted me-1"></i>
+                                    <span>32</span>
+                                    <span class="ms-md-auto font-weight-bold">19th Aug 2015</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-wrapper timeline-wrapper-success">
+                            <div class="timeline-badge"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h6 class="timeline-title">Bootstrap 4 alpha 1</h6>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Bootstrap 4 has been a massive undertaking that touches nearly every
+                                        line of code.</p>
+                                </div>
+                                <div class="timeline-footer d-flex align-items-center flex-wrap">
+                                    <i class="mdi mdi-heart-outline text-muted me-1"></i>
+                                    <span>26</span>
+                                    <span class="ms-md-auto font-weight-bold">15th Jun 2015</span>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="member mb-4  wow animate__fadeInUp">
+        <div class="container wow animate__fadeInUp">
+            <h2 class="member-text text-center">
+                ĐÃ ĐĂNG KÝ</h2>
+            <div class="row text-center member-content">
+                <div class="d-none d-md-block col-md-2"></div>
+                <div class="col-12 col-md-8 container bg-light rounded shadow-lg py-4">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="text-primary" id="sinhvien">100</h2>
+                            <p>Sinh viên</p>
+                        </div>
+                        <div class="col">
+                            <h2 class="text-primary">42</h2>
+                            <p>Khoa</p>
+                        </div>
+                        <div class="col">
+                            <h2 class="text-primary">12</h2>
+                            <p>Trường đại học</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <footer class="text-light py-2 text-center">2021 © Thực hiện bởi Đoàn khoa Mạng máy tính và
+        Truyền
+        thông</footer> -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted pt-2  wow animate__fadeInUp" id="footer">
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <img src="./img/LogoHiTSV!.png" class="w-100" alt="logohitsv">
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-5 col-lg-4 col-xl-4 mx-auto mb-4">
+                        <div class="text-center">
+                            <iframe
+                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fuit.nc&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=894958811375739"
+                                class="text-center mx-auto w-100" height="130" style="border:none;overflow:hidden;"
+                                scrolling="no" frameborder="0" allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fa fa-globe me-3"></i>
+                            https://suctremmt.com/</p>
+                        <p><i class="fa fa-globe me-3"></i>
+                            https://nc.uit.edu.vn/</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>doantn.mmt@gmail.com
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="bg-yellow py-2 text-center">2021 © Thực hiện bởi Đoàn khoa Mạng máy tính và Truyền thông
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <script>
+        document.getElementById("sinhvien").innerHTML = Math.floor(Math.random() * (969 - 300 + 1)) + 300;
+        new WOW().init();
+    </script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+</body>
+
+</html>

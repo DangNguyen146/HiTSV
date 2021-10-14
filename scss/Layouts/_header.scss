@@ -1,0 +1,72 @@
+header {
+  margin-top: 80px !important;
+  .container-fluid {
+    // Large devices (desktops, 992px and up)
+    @media (max-width: 992px) {
+      margin-bottom: 40px;
+    }
+
+    .menuRight {
+      .hinhVeHeader {
+        position: relative;
+        width: 100%;
+        img {
+          display: block;
+          position: absolute;
+        }
+      }
+      // Small devices (landscape phones, 576px and up)
+      @media (max-width: 992px) {
+        min-height: 400px;
+        .hinhVeHeader .cay {
+          top: 2rem !important;
+        }
+      }
+      // Large devices (desktops, 992px and up)
+      @media (min-width: 100px) {
+        min-height: 400px;
+      }
+      @media (min-width: 1000px) {
+        min-height: 450px;
+      }
+      @media (min-width: 1100px) {
+        min-height: 500px;
+      }
+      @media (min-width: 1200px) {
+        min-height: 550px;
+      }
+      @media (min-width: 1300px) {
+        min-height: 600px;
+      }
+      @media (min-width: 1400px) {
+        min-height: 650px;
+      }
+      @media (min-width: 1500px) {
+        min-height: 700px;
+      }
+      @media (min-width: 1600px) {
+        min-height: 750px;
+      }
+      @media (min-width: 1700px) {
+        min-height: 800px;
+      }
+    }
+    .menuLeft {
+      @media (min-width: 992px) {
+        text-align: left;
+        margin-top: 50px;
+      }
+      @media (max-width: 992px) {
+        margin-top: 10px;
+        text-align: center;
+        .buttonOutilinePrimary {
+          margin: 2px auto;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

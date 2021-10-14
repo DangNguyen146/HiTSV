@@ -1,0 +1,139 @@
+@mixin buttonPrimary {
+  // padding: 7px;
+  // &::before{
+  //     position: relative;
+  //     content: "";
+  //     display: block;
+  //     width: 100%;
+  //     height: calc(50% - .4rem);
+  //     top: 0px;
+  //     left: 0;
+  //     border: 1px solid rgba(236,232,225,.5);
+  // }
+  // div{
+  //     position: relative;
+  //     overflow: hidden;
+  //     background-color: $color-text-white;
+  //     .span-hover{
+  //         background-color: #f6d654;
+  //         content: "";
+  //         display: block;
+  //         position: absolute;
+  //         height: 100%;
+  //         width: 120%;
+  //         top: 0;
+  //         left: 0;
+  //         z-index: 1;
+  //         transform: translateX(-100%) skew(-10deg);
+  //     }
+  //     .span-non{
+  //         color: $color-yellow;
+  //         font-weight: 700;
+  //         z-index: 2;
+  //         cursor: pointer;
+  //         position: relative;
+  //         display: block;
+  //     }
+  // }
+
+  // &:hover{
+  //     div{
+  //         .span-hover{
+  //             transition: all 0.5s;
+  //             transform: translateX(0%) skew(-10deg);
+  //         }
+  //         .span-non{
+  //             color: white;
+  //         }
+  //     }
+  // }
+  padding: 6px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border: 2px solid #fff;
+  }
+  div {
+    overflow: hidden;
+    padding: 5px 12px;
+    background-color: $color-text-white;
+    // .span-hover {
+    //   background-color: #f6d654;
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   height: 100%;
+    //   width: 120%;
+    //   top: 0;
+    //   left: 0;
+    //   z-index: 1;
+    //   transform: translateX(-100%) skew(-10deg);
+    // }
+    .span-non {
+      font-weight: 700;
+      color: $color-yellow;
+    }
+  }
+  &:hover {
+    div {
+      .span-non {
+        transition: all 0.5s;
+        color: $color-yellow-hover;
+      }
+    }
+  }
+}
+@mixin buttonOutilinePrimary {
+  position: relative;
+  display: block;
+  width: 200px;
+  text-align: center;
+  padding: 7px;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border: 2px solid $color-yellow;
+  }
+  div {
+    overflow: hidden;
+    padding: 5px 12px;
+    position: relative;
+    background-color: $color-yellow;
+    .span-hover {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: $color-yellow-hover;
+      height: 100%;
+      width: 120%;
+      top: 0px;
+      left: -5px;
+      z-index: 1;
+      transform: translateX(-100%) skew(-10deg);
+      transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    }
+    .span-non {
+      z-index: 2;
+      position: relative;
+      font-weight: 700;
+      color: #fff;
+      display: block;
+    }
+  }
+  &:hover {
+    div {
+      .span-hover {
+        transform: translateX(0) skew(-10deg);
+      }
+    }
+  }
+}

@@ -14,8 +14,7 @@ TaskList.getListApi()
       document.getElementById("sinhvien").innerHTML = result.data.sinhvien;
       document.getElementById("todoi").innerHTML = result.data.todoi;
       document.getElementById("canhan").innerHTML = result.data.canhan;
+      window.localStorage.setItem("saveapi", JSON.stringify(result.data));
     }
-
-    window.localStorage.setItem("saveapi", JSON.stringify(result.data));
   })
   .catch(function (erro) {});

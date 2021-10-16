@@ -113,23 +113,23 @@
                     <div class="container">
                         <div class="row text-center py-3">
                             <div class="col text-light my-auto">
-                                <b class="counter" style="font-size: 2.5rem;" id="day">00</b>
+                                <b class="" style="font-size: 2.5rem;" id="day">00</b>
                                 <p>DAYS</p>
                             </div>
                             <div class="col-1 font-weight-bolder text-light my-auto" style="font-size: 2rem">:</div>
                             <div class="col text-light my-auto">
-                                <b class="counter" style="font-size: 2.5rem; " id="hour">00</b>
+                                <b class="" style="font-size: 2.5rem; " id="hour">00</b>
                                 <p>HOURS</p>
                             </div>
                             <div class="col-1 font-weight-bolder text-light my-auto" style="font-size: 2rem">:</div>
                             <div class="col  text-light my-auto">
-                                <b class="counter" style="font-size: 2.5rem; " id="minu">00</b>
+                                <b class="" style="font-size: 2.5rem; " id="minu">00</b>
                                 <p>MINUTES</p>
                             </div>
                             <div class="d-none d-sm-block col-1 font-weight-bolder text-light my-auto"
                                 style="font-size: 2rem">:</div>
                             <div class="col  text-light my-auto">
-                                <b class="counter" style="font-size: 2.5rem; " id="seco">00</b>
+                                <b class="" style="font-size: 2.5rem; " id="seco">00</b>
                                 <p>SECONDS</p>
                             </div>
                         </div>
@@ -259,15 +259,15 @@
                 <div class="col-12 col-md-8 container bg-light rounded shadow-lg py-4">
                     <div class="row">
                         <div class="col">
-                            <h2 class="text-primary counter" id="sinhvien">00</h2>
+                            <b class="text-primary counter" style="font-size: 2.5rem;" id="sinhvien">00</b>
                             <p>Sinh viên</p>
                         </div>
                         <div class="col">
-                            <h2 class="text-primary counter" id="todoi">00</h2>
+                            <b class="text-primary counter" style="font-size: 2.5rem;" id="todoi">00</b>
                             <p>Tổ đội</p>
                         </div>
                         <div class="col">
-                            <h2 class="text-primary counter" id="canhan">00</h2>
+                            <b class="text-primary counter" style="font-size: 2.5rem;" id="canhan">00</b>
                             <p>Cá nhân</p>
                         </div>
                     </div>
@@ -331,18 +331,12 @@
     <!-- Footer -->
 
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countup.min.js"></script>
     <script>
-        jQuery(document).ready(function ($) {
-            $('.counter').counterUp({
-                delay: 10,
-                time: 1000
-            });
-        });
+        $('.counter').countUp();
     </script>
-    <script type="text/javascript"
-        src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
 
     <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script type="text/javascript" src="./js/taskService.js"></script>

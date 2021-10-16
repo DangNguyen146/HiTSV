@@ -10,12 +10,8 @@ var TaskList = new taskService();
 
 TaskList.getListApi()
   .then(function (result) {
-    console.log(result.data);
-    console.log("da chay cai nay");
     document.getElementById("sinhvien").innerHTML = result.data.sinhvien;
     document.getElementById("todoi").innerHTML = result.data.todoi;
     document.getElementById("canhan").innerHTML = result.data.canhan;
   })
-  .catch(function (erro) {
-    console.log(erro);
-  });
+  .catch(function (erro) {});

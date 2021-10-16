@@ -330,10 +330,12 @@
     <script src="js/jquery.countup.min.js"></script>
     <script>
         $('.counter').countUp();
-        const list = JSON.parse(localStorage.getItem("saveapi"));
-        document.getElementById("sinhvien").innerHTML = list.sinhvien;
-        document.getElementById("todoi").innerHTML = list.todoi;
-        document.getElementById("canhan").innerHTML = list.canhan;
+        if (localStorage.getItem("saveapi")) {
+            const list = JSON.parse(localStorage.getItem("saveapi"));
+            document.getElementById("sinhvien").innerHTML = list.sinhvien;
+            document.getElementById("todoi").innerHTML = list.todoi;
+            document.getElementById("canhan").innerHTML = list.canhan;
+        }
     </script>
     <!-- MDB -->
     <script type="text/javascript" src="./js/taskService.js"></script>

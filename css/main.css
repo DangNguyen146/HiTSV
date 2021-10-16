@@ -313,8 +313,7 @@ header .container-fluid .menuLeft p {
 }
 
 .member .container .member-text {
-  color: transparent;
-  -webkit-text-stroke: 1px #707070;
+  color: rgba(112, 112, 112, 0.5);
 }
 @media (max-width: 550px) {
   .member .container .member-text {

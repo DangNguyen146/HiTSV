@@ -22,8 +22,7 @@
     <link rel="shortcut icon" type="image/png" href="./img/favicon.ico" />
     <!-- css -->
     <link rel="stylesheet" href="./css/main.css">
-    <script src="js/coutdown.js"></script>
-    <script src="js/wow.min.js"></script>
+
     <title>HiTSV! | Đoàn khoa Mạng máy tính và Truyền thông</title>
 </head>
 
@@ -109,8 +108,8 @@
         <div class="container">
             <h2><b>COMMING SOON</b></h2>
             <div class="row">
-                <div class="col"></div>
-                <div class="col-10 col-md-8 justify-content-center col-md-9 tableClock shadow rounded-3">
+                <div class="col d-none d-sm-block"></div>
+                <div class="col-12 col-sm-10 col-md-8 justify-content-center col-md-9 tableClock shadow rounded-3">
                     <div class="container">
                         <div class="row text-center py-3">
                             <div class="col text-light my-auto">
@@ -127,16 +126,16 @@
                                 <b class="" style="font-size: 2.5rem; " id="minu">00</b>
                                 <p>MINUTES</p>
                             </div>
-                            <div class="d-none d-md-block col-1 font-weight-bolder text-light my-auto"
+                            <div class="d-none d-sm-block col-1 font-weight-bolder text-light my-auto"
                                 style="font-size: 2rem">:</div>
-                            <div class="d-none d-md-block col  text-light my-auto">
+                            <div class="col  text-light my-auto">
                                 <b class="" style="font-size: 2.5rem; " id="seco">00</b>
                                 <p>SECONDS</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col"></div>
+                <div class="col d-none d-sm-block"></div>
             </div>
         </div>
     </section>
@@ -210,7 +209,8 @@
                 <h2 class=" text-center">TIMELINE</h2>
                 <div class="mt-5">
                     <div class="timeline">
-                        <div class="timeline-wrapper timeline-wrapper-warning">
+                        <a href="https://www.facebook.com/uit.nc/photos/a.126874967365476/4687770761275851/"
+                            class="timeline-wrapper timeline-wrapper-warning">
                             <div class="timeline-badge"></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -225,8 +225,9 @@
                                     <span class="ms-md-auto font-weight-bold">9/10/2021</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="timeline-wrapper timeline-inverted timeline-wrapper-danger">
+                        </a>
+                        <a class="timeline-wrapper timeline-inverted timeline-wrapper-danger"
+                            href="https://www.facebook.com/uit.nc/photos/a.126874967365476/4700685059984421">
                             <div class="timeline-badge">
                             </div>
                             <div class="timeline-panel">
@@ -242,7 +243,7 @@
                                     <span class="ms-md-auto font-weight-bold">20 - 22/10/2021</span>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                         <!-- <div class="timeline-wrapper timeline-wrapper-success">
                             <div class="timeline-badge"></div>
                             <div class="timeline-panel">
@@ -349,12 +350,12 @@
                             <p>Sinh viên</p>
                         </div>
                         <div class="col">
-                            <h2 class="text-primary">42</h2>
-                            <p>Khoa</p>
+                            <h2 class="text-primary" id="todoi">42</h2>
+                            <p>Tổ đội</p>
                         </div>
                         <div class="col">
-                            <h2 class="text-primary">12</h2>
-                            <p>Trường đại học</p>
+                            <h2 class="text-primary" id="canhan">12</h2>
+                            <p>Cá nhân</p>
                         </div>
                     </div>
                 </div>
@@ -399,13 +400,14 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             Contact
                         </h6>
-                        <p><i class="fa fa-globe me-3"></i>
+                        <p><i class="fa fa-globe me-3" style="width: 10px;"></i>
                             https://suctremmt.com/</p>
-                        <p><i class="fa fa-globe me-3"></i>
+                        <p><i class="fa fa-globe me-3 " style="width: 10px;"></i>
                             https://nc.uit.edu.vn/</p>
                         <p>
-                            <i class="fas fa-envelope me-3"></i>doantn.mmt@gmail.com
+                            <i class="fas fa-envelope me-3" style="width: 10px;"></i>hitansinhvien@gmail.com
                         </p>
+                        <p><i class="fab fa-facebook-f me-3" style="width: 10px;"></i>facebook.com/uit.nc</p>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -421,7 +423,10 @@
     </footer>
     <!-- Footer -->
 
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/taskService.js"></script>
+    <script src="js/coutdown.js"></script>
+    <script src="js/wow.min.js"></script>
     <script>
         document.getElementById("sinhvien").innerHTML = Math.floor(Math.random() * (969 - 300 + 1)) + 300;
         new WOW().init();

@@ -10,9 +10,11 @@ var TaskList = new taskService();
 
 TaskList.getListApi()
   .then(function (result) {
-    document.getElementById("sinhvien").innerHTML = result.data.sinhvien;
-    document.getElementById("todoi").innerHTML = result.data.todoi;
-    document.getElementById("canhan").innerHTML = result.data.canhan;
+    if (result.data) {
+      document.getElementById("sinhvien").innerHTML = result.data.sinhvien;
+      document.getElementById("todoi").innerHTML = result.data.todoi;
+      document.getElementById("canhan").innerHTML = result.data.canhan;
+    }
 
     window.localStorage.setItem("saveapi", JSON.stringify(result.data));
   })

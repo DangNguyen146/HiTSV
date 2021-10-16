@@ -208,7 +208,8 @@
                         <div class="timeline-wrapper timeline-wrapper-warning ">
                             <div class="timeline-badge"></div>
                             <div class="timeline-panel">
-                                <a href="https://www.facebook.com/uit.nc/photos/a.126874967365476/4687770761275851/">
+                                <a href="https://www.facebook.com/uit.nc/photos/a.126874967365476/4687770761275851/"
+                                    target="_blank">
                                     <div class="timeline-heading">
                                         <h5 class="timeline-title">MINIGAME “WH47’S MY P4$$W0RD?</h5>
                                     </div>
@@ -227,7 +228,8 @@
                             <div class="timeline-badge">
                             </div>
                             <div class="timeline-panel">
-                                <a href="https://www.facebook.com/uit.nc/photos/a.126874967365476/4700685059984421">
+                                <a href="https://www.facebook.com/uit.nc/photos/a.126874967365476/4700685059984421"
+                                    target="_blank">
                                     <h5 class="timeline-title">Mở link đăng kí chương trình</h5>
                                     <div class="timeline-heading text-center">
                                         <img src="./img/243138489_4700685063317754_4836413167949705054_n.png"
@@ -295,11 +297,15 @@
                             Contact
                         </h6>
                         <p><i class="fa fa-globe me-3" style="width: 10px;"></i>
-                            https://suctremmt.com/</p>
-                        <p>
-                            <i class="fas fa-envelope me-3" style="width: 10px;"></i>hitansinhvien@gmail.com
+                            <a class="text-decoration-none" style="color: #4f4f4f;"
+                                href="https://suctremmt.com">suctremmt.com</a>
                         </p>
-                        <p><i class="fab fa-facebook-f me-3" style="width: 10px;"></i>facebook.com/uit.nc</p>
+                        <p>
+                            <i class="fas fa-envelope me-3" style="width: 10px;"></i> <a class="text-decoration-none"
+                                style="color: #4f4f4f;" href="https://mail.google.com/">hitansinhvien@gmail.com</a>
+                        </p>
+                        <p><i class="fab fa-facebook-f me-3" style="width: 10px;"></i> <a class="text-decoration-none"
+                                style="color: #4f4f4f;" href="https://facebook.com/uit.nc">facebook.com/uit.nc</a> </p>
                     </div>
                 </div>
             </div>
@@ -315,6 +321,7 @@
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script>
         new WOW().init();
+
     </script>
 
     <script type="text/javascript" src="js/coutdown.js"></script>
@@ -323,6 +330,10 @@
     <script src="js/jquery.countup.min.js"></script>
     <script>
         $('.counter').countUp();
+        const list = JSON.parse(localStorage.getItem("saveapi"));
+        document.getElementById("sinhvien").innerHTML = list.sinhvien;
+        document.getElementById("todoi").innerHTML = list.todoi;
+        document.getElementById("canhan").innerHTML = list.canhan;
     </script>
     <!-- MDB -->
     <script type="text/javascript" src="./js/taskService.js"></script>
